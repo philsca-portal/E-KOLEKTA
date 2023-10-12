@@ -1,0 +1,356 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	scroll-behavior: smooth;
+}
+
+body {
+	text-align: left;
+	font-family: 'Titillium Web', sans-serif;
+}
+
+.wrapper {
+	width: 1170px;
+	margin: 0 auto;
+
+}
+header {
+	height: 100prgb(48, 36, 36);
+	background-color: #262626;
+	width: 100%;
+	z-index: 10;
+	position: fixed;
+}
+.logo {
+	width: 30%;
+	float: left;
+	line-height: 100px;
+}
+.logo a {
+	text-decoration: none;
+	font-size: 30px;
+	font-family: poppins;
+	color: #fff;
+	letter-spacing: 5px;
+}
+nav {
+	float: right;
+	line-height: 100px;
+}
+nav a {
+	text-decoration: none;
+	font-family: 'Titillium Web', sans-serif;
+	letter-spacing: 4px;
+	font-size: 20px;
+	margin: 0 10px;
+	color: #fff;
+}
+
+/** SLIDER **/
+
+button{
+	border: 10pxx;
+	height: 30px;
+	width: 150px;
+	font-size: 20px;
+	background-color: transparent;
+	color: white;
+	border-color: white;
+	cursor: pointer;
+	border: 1px solid white;
+	background-color: transparent;
+	height: 45px;
+	width: 250px;
+	color: white;
+	font-size: 1.5em;
+	box-shadow: 0 6px 6px rgba(0, 0, 0, 0.6);
+	font-family: 'Titillium Web', sans-serif;
+	margin-top: 15px;
+}
+
+/* 2 */
+.slider{
+	position: relative;
+	width: 100%;
+	background: #2c3e50; /* darckblue */
+}
+.myslide{
+	height: 655px;
+	display: none;
+	overflow: hidden;
+}
+
+.prev, .next{
+	position: absolute;
+	top: 50%;
+	transform: translate(0, -50%);
+	font-size: 50px;
+	padding: 15px;
+	cursor: pointer;
+	color: #fff;
+	transition: 0.1s;
+	user-select: none;
+}
+.prev:hover, .next:hover{
+	color: #26262626;
+}
+
+.next{
+	right: 0;
+}
+.dotsbox{
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%);
+	bottom: 20px;
+	cursor: pointer;
+}
+.dot{
+	display: inline-block;
+	width: 15px;
+	height: 15px;
+	border: 3px solid #fff;
+	border-radius: 50%;
+	margin: 0 10px;
+	cursor: pointer;
+}
+/* /2 */
+
+/* javascript */
+.active, .dot:hover{
+	border-color: #26262626; 
+}
+/* /javascript */
+
+/* muslide add fade */
+.fade {
+	-webkit-animation-name: fade;
+	-webkit-animation-duration: 1.5s;
+	animation-name: fade;
+	animation-duration: 1.5s;
+  }
+  
+  @-webkit-keyframes fade {
+	from {opacity: 0.8}
+	to {opacity: 1}
+  }
+  
+  @keyframes fade {
+	from {opacity: 0.8}
+	to {opacity: 1}
+  }
+  /* /muslide add fade */
+  
+  /* 3 */
+  .txt{
+	  position: absolute;
+	  color: #fff;
+	  letter-spacing: 2px;
+	  line-height: 35px;
+	  top: 40%;
+	  left: 15%;
+	  -webkit-animation-name: posi;
+		-webkit-animation-duration: 2s;
+		animation-name: posi;
+		animation-duration: 2s;
+	  z-index: 1;
+  }
+  
+  @-webkit-keyframes posi {
+	from {left: 25%;}
+	to {left: 15%;}
+  }
+  
+  
+  @keyframes posi {
+	from {left: 25%;}
+	to {left: 15%;}
+  }
+  
+  .txt h1{
+	  color: white;
+	  font-size: 50px;
+	  margin-bottom: 20px;
+  }
+  .txt p{
+	  font-weight: bold;
+	  font-size: 20px;
+  }
+  /* /3 */
+  
+  
+  /* 5 */
+  @media screen and (max-width: 800px){
+	  .myslide{
+		  height: 500px;
+	  }
+	  .txt{
+		  letter-spacing: 2px;
+		  line-height: 25px;
+		  top: 50%;
+		  left: 50%;
+		  transform: translate(-50%, -50%);
+		  -webkit-animation-name: posi2;
+		  -webkit-animation-duration: 2s;
+		  animation-name: posi2;
+		  animation-duration: 2s;
+	  }
+  
+	  @-webkit-keyframes posi2 {
+		from {top: 35%;}
+		to {top: 50%;}
+	  }
+  
+  
+	  @keyframes posi2 {
+		from {top: 35%;}
+		to {top: 50%;}
+	  }
+  
+	  .txt h1{
+		  font-size: 40px;
+	  }
+	  .txt p{
+		  font-size: 13px;
+	  }
+  
+  }
+  /* /5 */
+  
+  /* 6 */
+  @media screen and (max-width: 520px){
+	  .txt h1{
+		  font-size: 30px;
+		  margin-bottom: 20px;
+	  }
+	  .sign{
+		  margin-right: 20px;
+	  }
+	  .sign a{
+		  font-size: 12px;
+	  }
+  }
+  /* /6 */
+
+/* CHAT BOT */
+section2 {
+	text-align: left;
+}
+.faqs{
+	display: flex;
+	margin-left: 150px;
+	margin-top: 100px;
+	margin-bottom: 100px;
+}
+
+#contact{
+	margin-top: 100px;
+	line-height: 2.5;
+}
+#screen
+{
+    height: 670px;
+    width: 400px;
+    border-radius: 30px;
+    background: #f6f6f6;
+    border-radius: 25px;
+    border: 15px solid #fff;
+    box-shadow: 3px 3px 15px rgba(0,0,0,0.2);
+    position: relative;
+    overflow: hidden;
+	margin-left: 100px;
+	margin-right: 150px;
+}
+#header
+{
+    height: 80px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #262626;
+    display: grid;
+    place-items: center;
+    font-size: 25px;
+    color: #fff;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px #000000a1;
+}
+#messageDisplaySection
+{
+    height: 450px;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 100px;
+    padding: 0 20px;
+    overflow-y: auto;
+}
+.chat
+{
+    min-height: 40px;
+    max-width: 60%;
+    padding: 15px;
+    border-radius: 10px;
+    margin: 15px 0;
+}
+.botMessages
+{
+    background: #FAD02C;
+    color: #fff;
+    text-shadow: 1px 1px 2px #000000d4;
+	margin-right: 40px;
+}
+#messagesContainer
+{
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+.usersMessages
+{
+    background: #00000010;
+}
+#userInput
+{
+    height: 50px;
+    width: 90%;
+    position: absolute;
+    left: 5%;
+    bottom: 3%;
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+}
+#messages
+{
+    height: 50px;
+    width: 90%;
+    position: absolute;
+    left: 0;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 0px 15px;
+    font-size: 17px;
+}
+#send
+{
+    height: 50px;
+    width: 24%;
+    position: absolute;
+    right: 0;
+    border: none;
+    outline: none;
+    display: grid;
+    place-items: center;
+    color: #fff;
+    font-size: 20px;
+    background:#262626;
+    cursor: pointer;
+    display: none;
+}

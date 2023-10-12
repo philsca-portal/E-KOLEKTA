@@ -1,0 +1,287 @@
+<html>
+<head>
+	<title>BOOK A PICK-UP</title>
+	    <link rel="stylesheet" href="pickupstyle.css">
+    
+    <style>
+         
+        /* FOOTER */
+        .footer{
+            position: relative;
+            margin-top: 0px;
+        }
+
+
+        .wrapper-footer {
+            width: 1170px;
+            margin: 0 auto;
+        }
+
+
+        footer {
+            height: 250px;
+            background: #262626;
+            width: 100%;
+            z-index: 10;
+            font-family: 'Titillium Web', sans-serif;
+        }
+
+
+        foot {
+            float: right;
+            line-height: 100px;
+            padding-top: 80px;
+        }
+
+        foot a {
+            text-decoration: none;
+            letter-spacing: 4px;
+            font-size: 20px;
+            margin: 0 10px;
+            color: #fff;
+        }
+
+        .copyright-text
+        {
+        margin-left: 100px;
+        color: white;
+        padding-top: 0px;
+        font-size: 14px;
+        }
+
+        footer h1{
+            margin-left: 100px;
+            color: white;
+            padding-top: 80px;
+            font-size: 24px;
+        }
+
+        footer h3{
+            margin-left: 100px;
+            color: white;
+            font-size: 16px;
+        }
+
+        footer{
+            display: flex;
+        }
+
+        .tabs{
+            display: flex;
+            margin-left: 450px;
+        }
+
+        .tabs h2{
+            margin-left: 100px;
+            color: white;
+            padding-top: 80px;
+            font-size: 24px;
+        }
+
+        .tabs p{
+            margin-left: 100px;
+            color: white;
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <div class="header">
+		<header>
+			<div class="wrapper">
+				<div class="logo">
+					<img class="logo" src="logo1.png">
+				</div>
+				<nav>
+					<a href="book.html">Book</a> <a href="#">Track</a> <a href="#">Services</a> <a href="#">About Us</a> <a href="#">Login</a>
+				</nav>
+			</div>
+		</header>
+	</div>
+
+    <div class="formcontainer">
+        <h1 align="center">BOOK A PICK-UP</h1>
+
+        <form id="booking-form" action="#">
+            <div class="sender-information">
+                <h2 align="center">Sender Information</h2>
+                    <h4>Sender Details</h4>
+                    <div class="userInput">
+                    <table >
+                        <tr>
+                            <td>First Name</td>
+                            <td>
+                                <input type="text" size="25">
+                            </td>
+                            <td>Middle Name</td>
+                            <td>
+                                <input type="text" size="25">
+                            </td>
+                            <td>Last Name</td>
+                            <td>
+                                <input type="text" size="25">
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td>Contact Number</td>
+                            <td>
+                                <input type="text"  size="25">
+                            </td>
+                        </tr>	
+                        
+                            <td>Address</td>
+                            <td>
+                                <input type="text" size="25">
+                            </td>
+                    </table>
+                    </div>
+            </div>
+            
+            <!-- Shipment  -->
+            <div id="shipment-information">
+            <h2>Shipment Information</h2>
+                <table>
+                
+                        <h4>Recipient Details</h4>
+                <table >
+                    <tr>
+                        <td>First Name</td>
+                        <td>
+                            <input type="text" size="25">
+                        </td>
+                        <td>Middle Name</td>
+                        <td>
+                            <input type="text" size="25">
+                        </td>
+                        <td>Last Name</td>
+                        <td>
+                            <input type="text" size="25">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Contact Number</td>
+                        <td>
+                            <input type="text"  size="25">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Destination</td>
+                        <td>
+                            <input type="text"  size="25">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            
+            <div>
+                <h4>Shipment Details</h4>
+                <table>
+                    
+                        <td>Type:</td>
+                        <td>
+                            <select name="type" id="type" select style="width: 170px; height: 30px;">
+                                <option value="Document"> Document </option>
+                                <option value="Pouch"> Pouch </option>
+                                <option value="Small Box"> Small Box </option>
+                                <option value="Medium Box"> Medium Box </option>
+                                <option value="Large Box"> Large Box </option>
+                            </select>
+                        </td>
+                        <td>Size (WxH inches):</td>
+                        <td>
+                            <input type="text" size="25">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Weight:</td>
+                        <td>
+                            <input type="text" size="25">
+                        </td>
+                        <td>Class:</td>
+                        <td>
+                            <select name="class" id="class" select style="width: 170px; height: 30px;">
+                                <option value="Regular"> Regular </option>
+                                <option value="Silver"> Silver </option>
+                                <option value="Platinum"> Platinum </option>
+                            </select>
+                        </td>
+                    </tr>
+                    
+                </table>
+            </div>
+            
+            
+            <!-- Pick-up -->
+            <div id="pick-up information">
+            <h2>Pick-up Information</h2>
+                <table>
+
+                    <tr>
+                        <td>Date of Pick-up</td>
+                        <td>
+                            <input type="date">
+                        </td>
+                    <tr>
+                        <td>Time</td>
+                        <td>
+                            <input type="time">
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td>Pick-up Address</td>
+                        <td>
+                            <input type="text"  size="25">
+                        </td>
+                    </tr>
+                <tr>
+                        <td></td>
+    
+                        <td></td>
+                    </tr>
+                        <td></td>
+                    </tr>
+                </table>
+                </div>
+                
+                <div class="page-buttons">
+                <a href="#">
+                    <button class="submit-button">Submit</button>
+                </a>
+                <a href="#">
+                    <button class="clear-button">Clear</button>
+                </a>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <div class="footer">
+		<footer>
+			<div class="brand">
+				<h1> JJRGB Delivery Services</h1>
+				<h3> Country's Leading Courier Services Provider </h3>
+				<p class="copyright-text">Copyright &copy; 2021 All Rights Reserved by JJRGB</p>
+			</div>	
+			
+			<div class="tabs">
+				<div class="menu1">
+					<h2> My Account </h2>
+					<p>Login</p>
+					<p>Create an account</p>
+				</div>
+				<div class="menu2">
+					<h2> Services </h2>
+					<p>Book a Pick-up</p>
+					<p>Track & Trace </p>
+				</div>
+			</div>
+		</footer>
+	</div>
+
+</body>
+
+</html>

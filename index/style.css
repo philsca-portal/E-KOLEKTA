@@ -1,0 +1,40 @@
+html {
+    height: 100%;
+}
+body {
+    min-height: 100%;
+    background-color: #E8DBD8;
+}
+.logo h5{
+    font-family: 'Varela Round', sans-serif;
+    color: #E2A713;
+    position: absolute;
+    margin: 10px;
+    margin-left: 115px;
+}
+.logo h1{
+    font-family: 'Archivo Black', sans-serif;
+    margin: 30px;
+    margin-left: 40px;
+    font-size: 50px;
+}
+.container1{
+    display: inline-flex;
+    width: 100%;
+    padding: 20px;
+}
+.container1 .slideshow{
+    height: 350px;
+    width: 60%;
+    background-color: black;
+    margin: 10px;
+}
+.container1 .img{
+    height: 350px;
+    width: 40%;
+    margin: 10px;
+}
+.container1 .img img{
+    position: absolute;
+    transform: translate(100px);
+}

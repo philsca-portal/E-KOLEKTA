@@ -1,0 +1,292 @@
+body{
+	font-family: 'Open Sans', sans-serif;
+	align-items: center;
+	background-color: #EEF8EC;
+	justify-content: center;
+}
+
+.all{
+	border: 3px solid #fff;
+    padding: 20px;
+}
+.container{
+	background-color: #fff;
+	border-radius: 5px;
+	box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+	overflow: hidden;
+	width: 450px;
+	max-width: 100%;
+	margin-top: 0px;
+	margin-left: 125px;
+	margin-bottom: 150px;
+	float: left;
+}
+
+.containerr{
+	background-color: #fff;
+	border-radius: 5px;
+	box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+	overflow: hidden;
+	width: 450px;
+	max-width: 100%;
+	margin-top: 0px;
+	margin-left: 700px;
+	margin-bottom: 150px;
+}
+.image img{
+	height: 100px;
+	width: 100px;
+	border:2px solid black;
+	margin-bottom: 20px;
+	float: left;
+}
+#select{
+	border: 2px solid black;
+	border-radius: 4px;
+	margin: 20px;
+	font-family: inherit;
+	font-size: 16px;
+	padding: 10px;
+	position: relative;
+	bottom: -10px;
+}
+#submit{
+	border: 2px solid black;
+	border-radius: 4px;
+	display: block;
+	font-family: inherit;
+	font-size: 16px;
+	width: 100%;
+	padding: 10px;
+}
+#upprogress{
+	margin-left: 30px;
+}
+#submitt{
+	border: 2px solid black;
+	border-radius: 4px;
+	display: block;
+	font-family: inherit;
+	font-size: 16px;
+	width: 100%;
+	padding: 10px;
+}
+.headerr{
+	background: #FFB6C1;
+	border-bottom: 1px solid #f0f0f0;
+	padding: 20px 40px;
+}
+.headerr h2{
+	margin: 0;
+}
+.form{
+	padding: 30px 40px;
+}
+.form-control{
+	margin-bottom: 10px;
+	padding-bottom: 20px; 
+	position: relative;
+}
+.form-control label{
+	display: inline-block;
+	margin-bottom: 5px;
+}
+.form-control input{
+	border: 2px solid #f0f0f0;
+	border-radius: 4px;
+	display: block;
+	font-family: inherit;
+	font-size: 14px;
+	padding: 10px;
+	width: 100%;
+}
+
+.form-control.success input{
+	border-color: #2ecc71;
+}
+.form-control.error input{
+	border-color: #e74c3c;
+}
+.form-control i{
+	position: absolute;
+	top: 37px;
+	right: 10px;
+	visibility: hidden;
+}
+.form-control.success i.fa-check-circle{
+	color: #2ecc71;
+	visibility: visible;
+}
+.form-control.error i.fa-exclamation-circle{
+	color: #e74c3c;
+	visibility: visible;	
+}
+.form-control small{
+	visibility: hidden;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+.form-control.success small{
+	color: #2ecc71;
+	visibility: visible;
+}
+.form-control.error small{
+	color: #e74c3c;
+	visibility: visible;
+}
+.form .button input{
+	border: 2px solid black;
+	border-radius: 4px;
+	display: block;
+	font-family: inherit;
+	font-size: 16px;
+	width: 100%;
+	padding: 10px;
+}
+.alreadyhaveanaccount p{
+	text-align: center; 
+	padding-top: 10px;
+}
+
+/* NAV BAR */
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	scroll-behavior: smooth;
+}
+
+.wrapper {
+	width: 1170px;
+	margin: 0 auto;
+}
+
+header {
+	height: 100px;
+	background: #FFB6C1;
+	width: 100%;
+	z-index: 10;
+	position: fixed;
+	position: relative;
+}
+
+.logo {
+	width: 30%;
+	float: left;
+	position: relative;
+	left: -40px;
+	line-height: 100px;
+}
+.logo a {
+	text-decoration: none;
+	font-size: 30px;
+	font-family: poppins;
+	color: #fff;
+	letter-spacing: 5px;
+}
+.title{
+	position: relative;
+	float: left;
+	left: -330px;
+	line-height: 100px;	
+}
+.title h2{
+	letter-spacing: 5px;
+}
+nav {
+	float: right;
+	line-height: 100px;
+}
+nav a {
+	text-decoration: none;
+	font-family: 'Titillium Web', sans-serif;
+	letter-spacing: 4px;
+	font-size: 20px;
+	margin: 0 10px;
+	color: #fff;
+}
+
+/** FOOTER **/
+
+.footer{
+	position: relative;
+	margin-top: 0px;
+	font-family: 'Titillium Web', sans-serif;
+}
+
+
+.wrapper-footer {
+	width: 1170px;
+	margin: 0 auto;
+}
+
+
+footer {
+	height: 100px;
+	background: #FFB6C1;
+	width: 100%;
+	z-index: 10;
+	font-family: 'Titillium Web', sans-serif;
+}
+
+
+foot {
+	float: right;
+	line-height: 100px;
+	padding-top: 80px;
+}
+
+foot a {
+	text-decoration: none;
+	letter-spacing: 4px;
+	font-size: 20px;
+	margin: 0 10px;
+	color: #fff;
+}
+
+.copyright-text
+{
+  margin-left: 100px;
+  color: white;
+  padding-top: 0px;
+  font-size: 14px;
+}
+
+footer h1{
+	margin-left: 100px;
+	color: white;
+	padding-top: 80px;
+	font-size: 24px;
+}
+
+footer h3{
+	margin-left: 100px;
+	color: white;
+	font-size: 16px;
+	font-family: 'Titillium Web', sans-serif;
+}
+
+footer{
+	display: flex;
+}
+
+.tabs{
+	display: flex;
+	margin-left: 300px;
+}
+
+.tabs h2{
+	margin-left: 100px;
+	color: white;
+	padding-top: 80px;
+	font-size: 24px;
+	font-family: 'Titillium Web', sans-serif;
+}
+
+.tabs p{
+	margin-left: 100px;
+	color: white;
+	font-family: 'Titillium Web', sans-serif;
+}
